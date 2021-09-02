@@ -3,10 +3,9 @@
 const cards = document.querySelector('.cards');
 items.forEach(item => createCard(item));
 function createCard(item) {
-    let cards__item = document.createElement('div');
-    cards__item.classList.add('cards__item');
-    cards__item.innerHTML = 
-    `<div class="card">
+    cards.innerHTML = cards.innerHTML + 
+`<div class='cards__item'>
+    <div class="card">
             <a href="#" class="card__like">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.4998 2.99988C14.7598 2.99988 13.0898 3.80988 11.9998 5.08988C10.9098 3.80988 9.23975 2.99988 7.49975 2.99988C4.41976 2.99988 1.99976 5.41988 1.99976 8.49988C1.99976 12.2799 5.39976 15.3599 10.5498 20.0399L11.9998 21.3499L13.4498 20.0299C18.5998 15.3599 21.9998 12.2799 21.9998 8.49988C21.9998 5.41988 19.5798 2.99988 16.4998 2.99988ZM12.0998 18.5499L11.9998 18.6499L11.8998 18.5499C7.13975 14.2399 3.99976 11.3899 3.99976 8.49988C3.99976 6.49988 5.49976 4.99988 7.49975 4.99988C9.03975 4.99988 10.5398 5.98988 11.0698 7.35988H12.9398C13.4598 5.98988 14.9598 4.99988 16.4998 4.99988C18.4998 4.99988 19.9998 6.49988 19.9998 8.49988C19.9998 11.3899 16.8598 14.2399 12.0998 18.5499Z" fill="black"/>
@@ -41,8 +40,8 @@ function createCard(item) {
                     <p class="stat">orders</p>
                 </div>
             </div>
-    </div>`
-cards.append(cards__item);
+    </div>
+</div>`
 } 
 
 
